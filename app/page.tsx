@@ -43,7 +43,7 @@ export default function ShifaCirclePage() {
   const professionals = [
     {
       name: "Dr. Aisha Khan",
-      specialty: "General Practitioner",
+      specialty: "Practitioner",
       workplace: "City Health Clinic",
       imageUrl: "/placeholder.svg?width=100&height=100",
       fallback: "AK",
