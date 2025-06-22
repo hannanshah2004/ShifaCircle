@@ -93,13 +93,6 @@ export default function ShifaCirclePage() {
 
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 bg-teal-600 text-white">
-        <div className="absolute inset-0">
-          <img
-            src="/placeholder.svg?width=1200&height=800"
-            alt="Abstract background"
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
         <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Welcome to Shifa Circle</h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-teal-100">
