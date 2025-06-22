@@ -1,6 +1,5 @@
 "use client"
 
-import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -172,16 +171,24 @@ export default function ShifaCirclePage() {
               </p>
               <Card className="shadow-lg">
                 <CardContent className="p-0">
-                  <Calendar
-                    mode="single"
-                    selected={new Date()}
-                    onSelect={() => {}} // Placeholder, make interactive if needed
-                    className="p-4 w-full"
-                    classNames={{
-                      day_selected: "bg-teal-600 text-white hover:bg-teal-700 focus:bg-teal-600",
-                      today: "bg-teal-100 text-teal-700",
-                    }}
-                  />
+                  {/* 
+                    To add your own Google Calendar, follow these steps:
+                    1. Go to your Google Calendar settings.
+                    2. Under "Settings for my calendars", select the calendar you want to share.
+                    3. Scroll down to the "Integrate calendar" section.
+                    4. Copy the "Embed code" (it starts with '<iframe...').
+                    5. Replace the entire iframe below with the code you copied.
+                  */}
+                                    <div className="w-full">
+                    <iframe 
+                      src="https://calendar.google.com/calendar/embed?src=syedhshah2004%40gmail.com&ctz=America%2FNew_York" 
+                      style={{ border: 0 }} 
+                      width="100%" 
+                      height="600" 
+                      frameBorder="0" 
+                      scrolling="no"
+                    ></iframe>
+                  </div>
                 </CardContent>
               </Card>
               <p className="mt-4 text-sm text-gray-500">
